@@ -13,6 +13,8 @@ import { TestComponent } from './components/test/test.component';
 import { UsersComponent } from './components/users/users.component';
 import { HttpClientModule } from '@angular/common/http';
 import { OtpvalidationComponent } from './components/login/otpvalidation/otpvalidation.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { AnalytiscComponent } from './components/analytisc/analytisc.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { OtpvalidationComponent } from './components/login/otpvalidation/otpvali
     TestComponent,
     UsersComponent,
     OtpvalidationComponent,
+    DashboardComponent,
+    AnalytiscComponent,
   ],
   imports: [
     BrowserModule,

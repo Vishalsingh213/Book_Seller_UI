@@ -34,7 +34,7 @@ export class OtpvalidationComponent implements OnInit {
 
   onSubmit = (otpForm: any) => {
     // this._provider = this._route.snapshot.queryParams['provider'];
-    // this._email = this._route.snapshot.queryParams['email'];
+    // this._email = this._route.snapshot.queryParams['email']; 
     // this._returnUrl = this._route.snapshot.queryParams['returnUrl'];
     
     const formValue = { ...otpForm };

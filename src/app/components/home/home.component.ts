@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { OtpReqModel } from '../models/otp-req-model';
@@ -15,7 +16,8 @@ export class HomeComponent implements OnInit {
   
   constructor(
     private _router: Router,
-    private _route: ActivatedRoute,) {
+    private _route: ActivatedRoute,
+    private _http: HttpClient) {
     
   }
 
@@ -35,13 +37,10 @@ export class HomeComponent implements OnInit {
     else
       this.loginPageView = false;
   }
-  cart()
+  dashboard()
   {
     debugger;
     this.name=this._userId;
-    // this._router.navigate(['/myCart'],queryParams{
-      
-    // })
+    this._router.navigate(['/analytics']);
   }
-
 }
